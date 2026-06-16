@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DentGroup · Ses Demo Kataloğu — asistan 7/24</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4f0; --card:#ffffff; --card-2:#fbfaf7;
+  --border:rgba(0,0,0,.10); --border-strong:rgba(0,0,0,.18);
+  --fg:#1b1b22; --muted:#6c6c78;
+  --primary:#e0761a; --primary-soft:#ef944a;
+  --warm:#c08227; --excited:#e0641a;
+  --radius:18px;
+  --display:"Space Grotesk",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,sans-serif;
+  --shadow-soft:0 1px 2px rgba(0,0,0,.05),0 8px 24px rgba(0,0,0,.07);
+  --shadow-elev:0 12px 40px rgba(0,0,0,.13);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);
+  -webkit-font-smoothing:antialiased;line-height:1.5;
+  background-image:radial-gradient(1200px 600px at 80% -10%,rgba(224,118,26,.10),transparent 60%),
+                   radial-gradient(900px 500px at -10% 10%,rgba(224,118,26,.06),transparent 55%);}
+
+header.site{position:sticky;top:0;z-index:50;backdrop-filter:saturate(160%) blur(14px);
+  background:rgba(246,244,240,.82);border-bottom:1px solid var(--border)}
+.bar{max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:16px}
+.bar img.logo{height:40px;width:auto;display:block}
+.bar .spacer{flex:1}
+.bar .tag{font-size:12px;color:var(--muted);letter-spacing:.04em}
+
+.hero{max-width:1180px;margin:0 auto;padding:54px 24px 18px}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--primary);font-weight:600}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,4vw,42px);
+  margin:14px 0 10px;letter-spacing:-.02em;line-height:1.08}
+.hero p{color:var(--muted);max-width:640px;margin:0;font-size:15px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-size:12px;color:var(--fg);background:rgba(0,0,0,.03);border:1px solid var(--border);
+  padding:6px 12px;border-radius:999px;backdrop-filter:blur(8px)}
+.chip b{color:var(--primary);font-weight:600}
+
+.wrap{max-width:1180px;margin:0 auto;padding:26px 24px 64px;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
+.card{background:linear-gradient(180deg,var(--card),var(--card-2));border:1px solid var(--border);
+  border-radius:var(--radius);padding:18px 18px 14px;box-shadow:var(--shadow-soft);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-elev);border-color:var(--border-strong)}
+.card h3{font-family:var(--display);font-weight:600;font-size:17px;margin:0 0 2px;display:flex;align-items:baseline;gap:8px}
+.card h3 small{color:#8a8a98;font-weight:400;font-size:11px;font-family:var(--body)}
+
+.tone{margin-top:14px}
+.tone .lbl{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.14em;margin-bottom:8px}
+.tone .lbl::before{content:"";width:8px;height:8px;border-radius:50%}
+.tone.warm .lbl{color:var(--warm)} .tone.warm .lbl::before{background:var(--warm)}
+.tone.excited .lbl{color:var(--excited)} .tone.excited .lbl::before{background:var(--excited)}
+.clip{margin-bottom:9px}
+.clip span{display:block;font-size:11px;color:var(--muted);margin-bottom:3px}
+audio{width:100%;height:34px}
+audio::-webkit-media-controls-panel{background:#eceae5}
+
+footer.site{border-top:1px solid var(--border);margin-top:10px}
+.foot{max-width:1180px;margin:0 auto;padding:28px 24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.foot img{height:30px}
+.foot .t{color:var(--muted);font-size:13px}
+.foot .t b{color:var(--fg);font-weight:600}
+.foot .r{flex:1;text-align:right;color:#7c7c8a;font-size:12px}
+.brand7{color:var(--primary)}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <img class="logo" src="logo.png" alt="asistan 7/24">
+    <div class="spacer"></div>
+    <span class="tag">Ses Demo Kataloğu</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">DentGroup · Ses Seçim Kataloğu</div>
+  <h1>Diş kliniği sesli asistanı için<br>aday ses kataloğu</h1>
+  <p>16 farklı kadın ses, iki tonda (warm / excited) ve üç gerçek senaryoda seslendirildi.</p>
+  <div class="meta">
+    <span class="chip"><b>16</b> ses</span>
+    <span class="chip"><b>2</b> ton · warm / excited</span>
+    <span class="chip"><b>3</b> senaryo</span>
+    <span class="chip">eleven_v3</span>
+  </div>
+</section>
+
+<main class="wrap" id="grid"></main>
+
+<footer class="site">
+  <div class="foot">
+    <img src="logo.png" alt="asistan 7/24">
+    <span class="t"><b>asistan <span class="brand7">7/24</span></b> — sesli &amp; yazılı klinik asistanı</span>
+  </div>
+</footer>
+
+<script>
+const names={belma:"Belma",mahidevran:"Mahidevran","bilinmeyen-mBUB":"İsimsiz (mBUB…)",derya:"Derya",
+cicek:"Çiçek",ahu:"Ahu","ayca-d":"Ayça D.",irem:"İrem",sevval:"Şevval",
+"bilinmeyen-gyxPK":"İsimsiz (gyxPK…)","gokce-deniz":"Gökçe Deniz",elvan:"Elvan",
+"betul-tuna":"Betül Tuna",ayca:"Ayça","duygu-eris":"Duygu Eriş",beyda:"Beyda"};
+const order=["belma","mahidevran","bilinmeyen-mBUB","derya","cicek","ahu","ayca-d","irem","sevval",
+"bilinmeyen-gyxPK","gokce-deniz","elvan","betul-tuna","ayca","duygu-eris","beyda"];
+const labels={1:"Karşılama",2:"Bekletme",3:"Teyit araması"};
+const tones=[["warm","warm"],["excited","excited"]];
+const grid=document.getElementById("grid");
+order.forEach(slug=>{
+  let html=`<div class="card"><h3>${names[slug]||slug} <small>${slug}</small></h3>`;
+  tones.forEach(([key,cls])=>{
+    html+=`<div class="tone ${cls}"><div class="lbl">${key}</div>`;
+    for(let n=1;n<=3;n++){
+      html+=`<div class="clip"><span>${n} · ${labels[n]}</span>
+        <audio controls preload="none" src="${slug}/${key}/${n}.mp3"></audio></div>`;
+    }
+    html+="</div>";
+  });
+  html+="</div>";
+  grid.insertAdjacentHTML("beforeend",html);
+});
+</script>
+</body>
+</html>
