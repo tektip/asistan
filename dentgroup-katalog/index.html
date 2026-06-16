@@ -107,9 +107,9 @@ footer.site{border-top:1px solid var(--border);margin-top:10px}
 </footer>
 
 <script>
-const names={belma:"Belma",mahidevran:"Mahidevran","bilinmeyen-mBUB":"İsimsiz (mBUB…)",derya:"Derya",
+const names={belma:"Belma",mahidevran:"Mahidevran","bilinmeyen-mBUB":"Selin",derya:"Derya",
 cicek:"Çiçek",ahu:"Ahu","ayca-d":"Ayça D.",irem:"İrem",sevval:"Şevval",
-"bilinmeyen-gyxPK":"İsimsiz (gyxPK…)","gokce-deniz":"Gökçe Deniz",elvan:"Elvan",
+"bilinmeyen-gyxPK":"Nehir","gokce-deniz":"Gökçe Deniz",elvan:"Elvan",
 "betul-tuna":"Betül Tuna",ayca:"Ayça","duygu-eris":"Duygu Eriş",beyda:"Beyda"};
 const order=["belma","mahidevran","bilinmeyen-mBUB","derya","cicek","ahu","ayca-d","irem","sevval",
 "bilinmeyen-gyxPK","gokce-deniz","elvan","betul-tuna","ayca","duygu-eris","beyda"];
@@ -117,7 +117,7 @@ const labels={1:"Karşılama",2:"Bekletme",3:"Teyit araması"};
 const tones=[["warm","warm"],["excited","excited"]];
 const grid=document.getElementById("grid");
 order.forEach(slug=>{
-  let html=`<div class="card"><h3>${names[slug]||slug} <small>${slug}</small></h3>`;
+  let html=`<div class="card"><h3>${names[slug]||slug}</h3>`;
   tones.forEach(([key,cls])=>{
     html+=`<div class="tone ${cls}"><div class="lbl">${key}</div>`;
     for(let n=1;n<=3;n++){
