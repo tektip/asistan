@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="/img/favicon.png" type="image/png">
+<title>WhatsApp Demo — Uzman Dr. Cansu Alakbarov</title>
+<style>
+  :root{--bg:#f4f8f9;--card:#ffffff;--accent:#14a89a;--ink:#243038;--muted:#8a9aa3;--border:#e0eef0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1100px 560px at 50% -8%,#e6f6f4 0%,var(--bg) 60%);
+    color:var(--ink);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
+  .logo{width:150px;max-width:60%;height:auto;margin-bottom:22px}
+  h1{font-size:22px;font-weight:700;margin-bottom:12px}
+  p{color:var(--muted);font-size:15.5px;line-height:1.6;max-width:360px;margin-bottom:8px}
+  .hint{margin-top:16px;font-size:15px;color:var(--ink);font-weight:600}
+  .arrow{font-size:26px;margin-top:8px;color:var(--accent);animation:b 1.4s infinite}
+  @keyframes b{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+  a.back{position:fixed;top:18px;left:18px;color:var(--muted);text-decoration:none;font-size:15px}
+  a.back:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+  <a class="back" href="/cansu-alakbarov/">← Geri</a>
+  <img class="logo" src="/img/logo.png" alt="asistan 7/24">
+  <h1>WhatsApp Demo</h1>
+  <p>Uzman Dr. Cansu Alakbarov — Dermatoloji — İzmir Alsancak</p>
+  <div class="hint">Demoyu denemek için aşağıdaki butona basın.</div>
+  <div class="arrow">↓</div>
+
+  <elevenlabs-convai agent-id="agent_6001kw3xf4bkezra8gp98cb02fp2"></elevenlabs-convai>
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+</html>
